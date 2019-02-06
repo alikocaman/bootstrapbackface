@@ -1,0 +1,51 @@
+
+
+
+.ana{
+
+position: relative;
+background-color: red;
+margin: 50px auto;
+  width:400px;
+  height:400px;
+
+  transform-style:preserve-3d;
+  transition: 1s;
+
+
+
+
+}
+.ana:hover{
+
+transform: rotateY(180deg);
+
+
+}
+
+.ana>div{
+
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top:0;
+ left: 0;
+
+}
+.ana .onyuz{
+  z-index: 3;
+  background-color: blue;
+  backface-visibility: hidden;
+
+
+
+
+}
+.ana .arkayuz{
+  background-color: green;
+  transform: rotateY(180deg);
+
+  backface-visibility: hidden;
+
+  z-index: 2
+}
